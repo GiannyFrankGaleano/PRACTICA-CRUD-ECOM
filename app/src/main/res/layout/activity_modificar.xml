@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modificar">
+
+    <Button
+        android:id="@+id/modify"
+        android:layout_width="134dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="124dp"
+        android:text="Modificar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/TextEmai"
+        android:layout_width="299dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="100dp"
+        android:ems="10"
+        android:hint="@string/hint_correo_electronico"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/modify"
+        tools:layout_editor_absoluteX="60dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="312dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="@string/hint_telefono"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/TextEmai"
+        tools:layout_editor_absoluteX="49dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/apellido"
+        android:layout_width="316dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="@string/hint_apellido"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Phone"
+        tools:layout_editor_absoluteX="47dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="309dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="@string/hint_nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/apellido"
+        tools:layout_editor_absoluteX="52dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="102dp"
+        android:layout_height="34dp"
+        android:text="Modificar"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
